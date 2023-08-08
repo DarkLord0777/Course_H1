@@ -24,6 +24,34 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+img{
+  display: block;
+}
 
 /* -----------------------------------HEADER------------------------------------ */
 span {
@@ -33,6 +61,10 @@ span {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+}
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-logo {
   color: #000;
@@ -72,6 +104,8 @@ span {
 /* --------------HERO------------------ */
 .hero {
   background-color: #212121;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: #fff;
@@ -83,6 +117,10 @@ span {
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  max-width: 696px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero-btn {
   color: #fff;
@@ -94,6 +132,13 @@ span {
   letter-spacing: 0.96px;
   background-color: var(--hover-color);
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: transparent;
 }
 /* --------------Features------------------ */
 .features-item-title {
@@ -104,6 +149,7 @@ span {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .features-item-txt {
   color: var(--text-color);
@@ -111,6 +157,10 @@ span {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.42px;
+}
+.features{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* --------------WORK-Workers------------------ */
 .work-title,
@@ -123,6 +173,12 @@ span {
   line-height: normal;
   letter-spacing: 1.08px;
 }
+.work-title{
+  margin-bottom: 50px;
+}
+.workers-title{
+  padding-bottom: 50px;
+}
 .workers-item-title {
   color: var(--main-color);
   text-align: center;
@@ -131,6 +187,7 @@ span {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
 }
 .workers-item-txt {
   color: var(--text-color);
@@ -140,9 +197,21 @@ span {
   line-height: normal;
   letter-spacing: 0.48px;
 }
+.Work{
+  padding-bottom:94px;
+}
+.workers{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.workers-name{
+  padding-top: 30px;
+}
 /* ===============================FOOTER================= */
 .footer {
   background-color: #212121;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .footer-logo {
   color: #fff;
@@ -151,6 +220,8 @@ span {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .footer-hero-link {
   color: #fff;
@@ -164,7 +235,6 @@ span {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;  
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
