@@ -13,6 +13,7 @@ body {
 }
 .link {
   text-decoration: none;
+  display: block;
 }
 .hidden {
   position: absolute;
@@ -97,6 +98,7 @@ span {
 .nav-link:hover,
 .header-link:hover {
   color: var(--hover-color);
+  fill: var(--hover-color);
 }
 .nav-link:focus,
 .header-link:focus {
@@ -112,6 +114,10 @@ span {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 1px;
 }
 .header-list,
 .header-list-second{
@@ -125,11 +131,19 @@ span {
 .header-list{
   gap: 50px;
 }
+
 /* --------------HERO------------------ */
 .hero {
   background-color: #212121;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),  url(../img/Hero-BG-optmz.jpg);
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
+
 }
 .hero-title {
   color: #fff;
@@ -161,13 +175,24 @@ span {
   padding: 10px 32px;
   border-radius: 4px;
   background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: transparent;
+}
+.hero-btn:hover{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 /* --------------Features------------------ */
 .features-list{
   display: flex;
   gap: 30px;
+}
+.features-svg-item{
+  width: 270px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 .features-item-title {
   color: var(--main-color);
@@ -243,6 +268,34 @@ span {
   line-height: normal;
   letter-spacing: 0.48px;
 }
+.list-soc{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.soc-link-item{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* padding: 12px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soc-item-svg{
+  fill: #afb1b8;
+}
+.soc-link-item:hover,
+.soc-link-item:focus{
+  background-color: var(--hover-color);
+  color: #fff;
+}
+.soc-link-item:hover .soc-item-svg,
+.soc-link-item:focus .soc-item-svg{
+  fill: #ffffff;
+}
+
 .Work{
   padding-bottom:94px;
 }
