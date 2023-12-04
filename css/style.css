@@ -13,7 +13,7 @@ body {
 }
 .link {
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 .hidden {
   position: absolute;
@@ -55,7 +55,9 @@ address {
 img{
   display: block;
 }
-
+.flex{
+  display: flex;
+}
 /* -----------------------------------HEADER------------------------------------ */
 span {
   color: var(--hover-color);
@@ -302,16 +304,62 @@ span {
 .workers{
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color:  #F5F4FA;
 }
 .workers-name{
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #ffffff;
+}
+
+/* ===============================REGULAR-CUSTUMERS================= */
+.Regular-customers{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.Regular-customers-title{
+  color: #212121;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.Regular-customers-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.Regular-customers-item-link{
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Regular-customers-link-svg{
+  fill: #AFB1B8;
+}
+.Regular-customers-item-link:hover,
+.Regular-customers-item-link:focus{
+  border: 1px solid var(--hover-color);
+}
+.Regular-customers-item-link:hover svg,
+.Regular-customers-item-link:focus svg{
+  fill: var(--hover-color)
 }
 /* ===============================FOOTER================= */
 .footer {
   background-color: #212121;
   padding-bottom: 60px;
   padding-top: 60px;
+}
+.footer-container1{
+  margin-right: 94px;
 }
 .footer-logo {
   color: #fff;
@@ -330,6 +378,7 @@ span {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  display: inline-block;
 }
 .footer-list{
   display: flex;
@@ -342,6 +391,7 @@ span {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  display: inline-block;
 }
 .footer-hero-link:hover,
 .footer-link:hover {
@@ -351,6 +401,40 @@ span {
 .footer-link:focus {
   color: var(--hover-color);
 }
+.footer-container2{
+  padding-top: 12px;
+}
+.footer-txt{
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-listTwo{
+  display: flex;
+  gap: 10px;
+}
+.footerTwo-item-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerTwo-item-link:hover,
+.footerTwo-item-link:focus{
+  background-color: var(--hover-color);
+}
+.footerTwo-link-svg{
+  fill: #FFF;
+}
+
 /* ===============================PORTFOLIO================= */
 .portfolio{
   padding-top: 94px;
@@ -380,11 +464,13 @@ span {
   border-radius: 4px;
   color: #fff;
   background-color: var(--hover-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 .portfolio-item-btn:focus {
   border-radius: 4px;
   color: #fff;
   background-color: var(--hover-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 .Categories{
   padding-bottom: 94px;
@@ -399,6 +485,13 @@ span {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+.Categories-list-item:hover{
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.Categories-list-item:focus{
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  visibility: hidden;
 }
 .Categories-item-title {
   color: var(--main-color);
